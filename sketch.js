@@ -2,6 +2,8 @@
 
 /*
 Worked with Priscilla Esteves on this exercise
+
+use the WSAD keys to move the player
 */
 
 

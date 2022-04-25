@@ -1,5 +1,10 @@
 /// <reference path="./node_modules/@types/p5/global.d.ts" />
 
+/*
+Worked with Priscilla Esteves on this exercise
+*/
+
+
 let player;
 var pushableGroup;
 var redGroup;
@@ -30,10 +35,12 @@ function setup() {
 function draw() {
     background(220);
     drawSprites();
+    //Checks and runs collision for pushable group
     pushableGroup.collide(player,(a,b) => {
         b.displace(a);
     });
-    
+
+    //Checks and runs collision for red group
     redGroup.collide(pushableGroup,(a,b) => {
         b.remove();
     });

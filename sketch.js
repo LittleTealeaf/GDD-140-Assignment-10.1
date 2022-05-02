@@ -19,8 +19,8 @@ function setup() {
     player = createSprite(width / 2, height / 2, 30, 30);
     player.shapeColor = color(150);
 
-    pushableGroup = Group();
-    redGroup = Group();
+    pushableGroup = new Group();
+    redGroup = new Group();
 
     var greenSprite = createSprite(width/3,height/3,30,30);
     greenSprite.shapeColor = color('green');
